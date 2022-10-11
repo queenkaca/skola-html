@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatiranje teksta</title>
+</head>
+
+<body>
+    <h1>Formatiranje teksta</h1>
+    <p><b>Sadržaj</b></p>
+    <ul>
+        <li><a href="#liste">Liste</a></li>
+        <li><a href="#tabele">Tabele</a></li>
+    </ul>
+    <p><b>HTML</b> jezik sadrži elemente kojima možemo da opišemo strukturu teksta.</p>
+    <p>Svaki tekstualni dokument ima delove koji imaju neka značenja (naslovi, pasusi teksta, tabele, liste). Na
+        sledećoj slici je prikazan primer teksta o Nikoli Tesli koji je (u avgustu 2022. godine) preuzet sa sajta
+        <b>Vikipedija</b>:
+    </p>
+    <img src="wikislika.png" alt="Nikola Tesla" title="Slika o Nikoli Tesli">
+    <p>U tekstu možemo da primetimo sledeće elemente: </p>
+    <ul>
+        <li>Naslov Nikola Tesla, koji je podeblјan i veći od ostatka teksta. </li>
+        <li>Tri pasusa teksta ispod naslova. </li>
+        <li>Ime Nikola Tesla, kojim počinje drugi pasus, podeblјano je (engl. bold). </li>
+        <li>Reference <sup>[1][2][3]</sup> su manje od ostatka teksta i malo uzdignute. </li>
+    </ul>
+    <p>U jeziku HTML se mogu označiti delovi teksta koji predstavlјaju naslove, pasuse, podeblјani ili izdignuti tekst,
+        tako što se ovi delovi stave u odgovarajuće HTML elemente. Na primer, prvo pominjanje Nikole Tesle u tekstu je
+        naslov, pa će ono biti stavlјeno u <i>h1</i> element. Svaki pasus teksta će biti stavlјen u po jedan <i>p</i>
+        element. Na ovaj način će pregledač znati koji delovi dokumenta predstavlјaju različite celine i koje vrste je
+        koja celina u
+        tekstu.
+    </p>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <p>U HTML jeziku postoji veliki broj oznaka kojima možete okružiti tekst i tako mu dati specijalno značenje. </p>
+
+    <table border="solid 1px" style="border-collapse:collapse">
+        <thead>
+            <tr>
+                <th><b>Element</b></th>
+                <th><b>Tagovi</b></th>
+                <th><b>Naziv na engleskom</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pasusi teksta</td>
+                <td>p</td>
+                <td>paragraph</td>
+            </tr>
+            <tr>
+                <td>Podnaslovi različitih nivoa</td>
+                <td>h1, h2...h6</td>
+                <td>heading</td>
+            </tr>
+            <tr>
+                <td>Podebljan tekst</td>
+                <td>b</td>
+                <td>bold</td>
+            </tr>
+            <tr>
+                <td>iskosen tekst</td>
+                <td>i</td>
+                <td>italic</td>
+            </tr>
+            <tr>
+                <td>podvucen tekst</td>
+                <td>u</td>
+                <td>underline</td>
+            </tr>
+            <tr>
+                <td>podignut tekst</td>
+                <td>sup</td>
+                <td>superscript</td>
+            </tr>
+            <tr>
+                <td>spusten tekst</td>
+                <td>sub</td>
+                <td>subscript</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_bRH-_47s84" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
+    <h2 id="liste">Liste</h2>
+    <p>Tekst nisu samo naslovi i pasusi. U velikom broju slučajeva potrebno je dodati i neke liste u tekst. U ovoj
+        lekciji ćete naučiti kako se koriste HTML elementi koji predstavlјaju složenije tekstualne strukture poput
+        listi.</p>
+    <p>U ovom kontekstu <b>lista</b> predstavlјa niz kratkih tekstova, koji se prikazuju jedan ispod drugog. Liste se
+        koriste
+        pri nabrajanju, zadavanju nekih koraka, i slično. Pogledajmo kao primer sledeći tekst o počasnim doktoratima
+        koje je dobio Nikola Tesla (preuzeto sa sajta Vikipedija):</p>
+
+    <img src="doktorati.png" alt="">
+
+    <p>Doktorati koje je Nikola Tesla dobio su kratki tekstualni zapisi koje želimo da nabrojimo u vidu liste. Svaka
+        stavka u listi se predstavlјa elementom <i>li</i> (engl. list item). </p>
+
+    <p>Svi elementi liste se stavlјaju u poseban HTML element koji označava listu kao celinu. U HTML jeziku se za
+        predstavlјanje cele liste najčešće koristi jedan od ova dva elementa: </p>
+
+    <ol>
+        <li><i>ul</i> element, koji predstavlјa neuređenu listu (engl. unordered list), u kojoj se elementi prikazuju
+            bez
+            indeksiranja. Sadržaj u ovakvim listama se okružuje <i>ul i /ul</i> oznakama. </li>
+        <li><i>ol</i> element, koji predstavlјa uređenu, odnosno numerisanu listu (engl. ordered list), u kojoj se
+            elementi
+            liste prikazuju u nekom redosledu obeleženi slovima (a, b, c) ili rednim brojevima (1, 2, 3). Sadržaj u ovim
+            listama se okružuje <i>ol i /ol</i> oznakama. </li>
+    </ol>
+
+    <p>Numerisanoj listi je moguće proslediti atribute start i type. Atribut start opisuje od kog rednog broja počinje
+        numeracija, dok je atributom type moguće promeniti tip numerisanja, na primer, numerisati slovima ili rimskim
+        brojevima.</p>
+
+    <p>Kao atribut type moguće je proslediti: </p>
+    <ul>
+        <li>1 za numeraciju arapskim brojevima,
+        </li>
+        <li>i za numeraciju rimskim brojevima (mala slova),</li>
+        <li>I za numeraciju rimskim brojevima (velika slova),
+        </li>
+        <li>a za numeraciju slovima (mala slova),
+        </li>
+        <li>A za numeraciju slovima (velika slova).
+        </li>
+    </ul>
+
+    <p>Uređene i neuređene liste je moguće ugnježdavati kako bi dobili podnivoe. Unutar elementa li kao sadržaj je,
+        pored teksta, moguće dodati posebnu listu.
+    </p>
+
+    <video controls autoplay muted poster="html-lists.jpg">
+        <source src="liste.mp4" />
+        video nije ucitan
+    </video>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <h2 id="tabele">Tabele</h2>
+    <p>Pored običnog teksta i listi, u veb strane često dodajemo i tabele. Sada ćemo naučiti kako to može da se uradi i
+        koji HTML elementi se koriste za to.
+    </p>
+    <p><b>Tabele</b> predstavlјaju podatke organizovane u obliku redova i kolona.
+    </p>
+    <p>Prvi red u tabeli sadrži nazive kolona i naziva se <b>zaglavlje</b> (engl. heading) tabele. Ispod ovog reda se
+        nalaze
+        redovi koji sadrže <b>podatke</b> (engl. data) u svojim <b>ćelijama</b> (engl. cells).
+    </p>
+    <p>Tabela je složeni HTML element, koji sadrži više drugih elemenata različitih vrsta. HTML elementi sadržani u
+        tabeli predstavlјaju različite delove tabele (zaglavlјe, ostali redovi, ćelije).
+    </p>
+
+    <table border="solid 1px" style="border-collapse:collapse">
+        <thead>
+            <tr>
+                <th><b>Element</b></th>
+                <th><b>Opis</b></th>
+                <th><b>Naziv na engleskom</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>table</td>
+                <td>tabela</td>
+                <td>table</td>
+            </tr>
+            <tr>
+                <td>thead</td>
+                <td>zaglavlje tabele</td>
+                <td>table header</td>
+            </tr>
+            <tr>
+                <td>tbody</td>
+                <td>telo tabele</td>
+                <td>table body</td>
+            </tr>
+            <tr>
+                <td>tr</td>
+                <td>red tabele</td>
+                <td>table row</td>
+            </tr>
+            <tr>
+                <td>th</td>
+                <td>ćelija zaglavlja tabele</td>
+                <td>table heading</td>
+            </tr>
+            <tr>
+                <td>td</td>
+                <td>ćelija tela tabele</td>
+                <td>table data</td>
+            </tr>
+            <tr>
+                <td>tfoot</td>
+                <td>podnožje tabele</td>
+                <td>table footer</td>
+            </tr>
+            <tr>
+                <td>caption</td>
+                <td>naslov</td>
+                <td>caption</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Cela tabela je okružena oznakama <i>table</i> i <i>/table</i>. Unutar svake tabele se nalaze zaglavlјe (između
+        oznaka <i>thead</i> i
+        <i>/thead</i>) i <b>telo</b> (između oznaka tagova <i>tbody</i> i <i>/tbody</i>). Unutar zaglavlјa i tela se
+        nalaze
+        <b>redovi</b>.
+    </p>
+
+    <audio controls>
+        <source src="himna.mp3">
+    </audio>
+</body>
+
+</html>
